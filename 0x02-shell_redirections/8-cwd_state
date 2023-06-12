@@ -1,14 +1,2 @@
-total 48
-drwxr-xr-x 2 root root   217 Jun 12 08:25 .
-drwxr-xr-x 6 root root   121 Jun 12 05:16 ..
--rwxr-xr-x 1 root root    32 Jun 12 05:56 0-hello_world
--rwxr-xr-x 1 root root    28 Jun 12 06:44 1-confused_smiley
--rwxr-xr-x 1 root root    28 Jun 12 06:49 2-hellofile
--rwxr-xr-x 1 root root    39 Jun 12 07:07 3-twofiles
--rwxr--r-- 1 root root    35 Jun 12 07:11 4-lastlines
--rwxr-xr-x 1 root root    35 Jun 12 07:14 5-firstlines
--rwxr-xr-x 1 root root    40 Jun 12 07:28 6-third_line
--rwxr-xr-x 1 root root    99 Jun 12 08:17 7-file
--rw-r--r-- 1 root root 12288 Jun 12 08:03 .7-file.swp
--rwxr-xr-x 1 root root     0 Jun 12 08:25 8-cwd_state
--rw-r--r-- 1 root root    25 Jun 12 05:55 README.md
+#!/bin/bash
+ls -la > ls_cwd_content
