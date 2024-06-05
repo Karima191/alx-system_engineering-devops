@@ -5,7 +5,7 @@
 import requests
 import sys
 
-def top_ten(subreddit)
+def top_ten(subreddit):
 
 if __name__ == '__main__':
     top_ten = __import__('1-top_ten').top_ten
