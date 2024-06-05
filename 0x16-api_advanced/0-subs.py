@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Function to query subscribers on a given Reddit subreddit."""
 import requests
+import sys
 
 
 def number_of_subscribers(subreddit):
@@ -13,6 +14,8 @@ def number_of_subscribers(subreddit):
         response = requests.get(url, headers=headers, allow_redirects=False)
         if response.status_code == 404:
             return 0
+        results = response.json().get("data")
+        return results.get("subscribers")
 
         response.raise_for_status()  # Raise HTTPError for bad responses (4xx and 5xx)
 
